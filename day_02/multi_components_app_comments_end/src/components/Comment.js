@@ -1,14 +1,14 @@
-import React, { Component } from "react";
+import React from "react";
 
-class Comment extends Component {
-  render() {
+const Comment = ({children, author}) => {
+
     return (
       <div className="comment">
-        <h4>{this.props.children}</h4>
-        <p>{this.props.author}</p>
+        <h4>{children}</h4>
+        <p>{author}</p>
       </div>
     );
-  }
+
 }
 
 export default Comment;
