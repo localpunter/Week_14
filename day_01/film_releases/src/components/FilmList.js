@@ -10,11 +10,9 @@ class FilmList extends Component {
         <Film
           key={film.id}
           name={film.name}
-          url = {film.url}>
-
-          </Film>
-      )
-    })
+          url = {film.url} />
+      );
+    });
 
     return (
       <div className="film-list">
@@ -22,7 +20,7 @@ class FilmList extends Component {
         {filmNodes}
         </ul>
       </div>
-    )
+    );
 
   }
 }
